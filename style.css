@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;;
+
+}
+.clocks{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#clockContainer{
+    position: relative;
+    /* margin:auto ; */
+    height: 45vw;
+    width: 40vw;;
+    /* height: 440px;
+    width: 400px;; */
+    border:10px;
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    background: url(clock.png) no-repeat;
+    background-size: 100%;;
+}
+#digitalContainer{
+    position: relative;
+    height: 10vw;
+    text-align: center;
+    padding: 10px;;
+    width: 40vw;
+    /* border:1px solid blue; */
+
+    
+ 
+
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin : bottom;
+}
+#hour{
+    top: 18%;
+    left: 49.1%;
+    width: 1.4%;
+    height: 27.5%;
+    
+}
+#minute{
+    top: 16%;
+    left: 49.22%;
+    width: 1%;
+    height: 29.5%;
+
+}
+#second{
+    top: 14%;
+    left: 49.5%;
+    width: 0.6%;
+    height: 30.5%;
+
+}  
+
+@media (200px <= width <= 450px) {
+    .clocks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap:0px;
+    }
+    
+}
